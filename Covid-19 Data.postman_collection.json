@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "f0b0a3ec-d4bb-4985-bcf9-78da5baf8a7f",
+		"name": "Covid-19 Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{BASE_URL}}/states/?query=New",
+					"protocol": "http",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"states",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "New"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get State Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{BASE_URL}}/states/:state",
+					"protocol": "http",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"states",
+						":state"
+					],
+					"variable": [
+						{
+							"key": "state",
+							"value": "New Jersey"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{BASE_URL}}/",
+					"protocol": "http",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "localhost:8000"
+		}
+	]
+}
