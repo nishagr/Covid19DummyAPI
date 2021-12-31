@@ -1,0 +1,34 @@
+{
+  "name": "debug",
+  "version": "1.0.0",
+  "description": "Covid-19 Data NodeJS Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint server.js",
+    "debug": "DEBUG=debug node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Covid-19",
+    "Backend",
+    "NodeJS"
+  ],
+  "author": "Nisheeth Agrawal",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "redis": "^4.0.1",
+    "sequelize": "^6.12.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.7"
+  }
+}
